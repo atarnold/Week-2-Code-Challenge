@@ -1,18 +1,25 @@
-function promptUserForInput(message) { // prompt user for input
-    return prompt(message).split(' ').map(Number);  // chnages an array of string to numbers
+// prompt user for input
+function promptUserForInput(message) { 
+    // chnages an array of string to numbers
+    return prompt(message).split(' ').map(Number);  
 }
 
 const ArrayNumbers = promptUserForInput("Enter Array Numbers: ");
 
-function filterPrimes(arr) { // filter primes
+// filter primes
+function filterPrimes(arr) {
     return arr.filter(num => {
-        for (let i = 2; i <= Math.sqrt(num); i++) { //loops through the numbers ensuring it is only divided by one and itself
+        //loops through the numbers ensuring it is only divided by one and itself
+        for (let i = 2; i <= Math.sqrt(num); i++) { 
             if (num % i === 0) return false;
         }
-        return num > 1; //returns numbers greater than 1
+        //returns numbers greater than 1
+        return num > 1; 
     });
 }
 
-const primeNumbers = filterPrimes(ArrayNumbers); // filter primes
+// filter primes
+const primeNumbers = filterPrimes(ArrayNumbers); 
 
-window.alert(primeNumbers); // displays the prime numbers
+// displays the prime numbers
+window.alert(primeNumbers); 
