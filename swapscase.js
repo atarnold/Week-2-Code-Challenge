@@ -1,4 +1,6 @@
-// Define a function called swappingCharacterString that takes a string parameter 'str'.
+//Prompts thed user for input
+const prompt = require("prompt-sync")({ sigint: true });
+// Defines a function called swappingCharacterString that takes a string parameter 'str'.
 function swappingCharacterString(str) {
     // Initialize an empty string called swappedString to store the swapped characters.
     let swappedString = '';

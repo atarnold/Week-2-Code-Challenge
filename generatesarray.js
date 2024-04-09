@@ -1,3 +1,5 @@
+//Prompts the user for inputnode
+const prompt = require("prompt-sync")({ sigint: true });
 //Define a function called acceptNumbers which takes two parameters.
 function acceptNumbers(number1, number2) {
     //Initialize an empty array called result to store the accepted numbers.

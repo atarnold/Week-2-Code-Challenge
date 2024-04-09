@@ -1,4 +1,6 @@
 // prompt user for input
+const prompt = require("prompt-sync")({ sigint: true });
+// Defines a function called promptUserForInput that takes a parameter 'message'.
 function promptUserForInput(message) { 
     // chnages an array of string to numbers
     return prompt(message).split(' ').map(Number);  
